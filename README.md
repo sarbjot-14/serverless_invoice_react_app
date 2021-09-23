@@ -1,71 +1,57 @@
-# Getting Started with Create React App
+# Serverless Invoice React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Reference: https://github.com/CodeEngineTechnology/Serverless_Invoice_App
+
+Followed tutorial to host a web app on aws. 
+
+## AWS Architecture
+<img src="https://github.com/sarbjot-14/dynamic_dcf/blob/master/Screenshot_20210825-114536.jpg" width="200" height="380">
+* **S3** : Host the React App 
+* **API Gateway** : Route API calls from React App in S3 bucket to Lambda functions
+* **Lambda Functions** : Retrieve data from DynamoDB and send back to client application
+* **DynamoDB** : Database
+* **IAM** : Give permissions to services
+
+
+## Tech Stack
+* **AWS** : Hosting serverless architecture
+* **React**
+* **Reactstrap** : Styled components such as tables and buttons
+* **Bootstrap** : Style front end
+* **Git** and **Github** : Version Control
+* **Node.js** : Lambda scripting language
+
+## To Do
+* Create a from to add invoices
+* Create post api resource to add invoice items to DynomoDB
+* Create delete and edit api calls
+* Add authentication
+
+
+## Reflection
+
+### Learning Outcomes
+1. How to host React app on S3 bucket
+2. How to route api calls through AWS API Gateway
+3. Learned how to work with api's and transfering data in json format. Learning how to use fetch with api's
+4. How to create lambda function written in node.js to fetch data from DynamoDB
+5. How to create DynamoDB table
+6. How to use IAM to give permissions
+7. Testing AWS serverless API calls
+8. Learned about asynchronous concepts such as promises, .then, async functions, await keyword
+9. How to create RESTFUL API and support CRUD with get and post fetch calls. 
+
+
+### Unexpected Obstacles
+* It is more work to create lambda functions to handle backend api calls than have a monolithic Express.js backend
 
 ## Available Scripts
 
-In the project directory, you can run:
+1. Clone repo
+2. Run `npm install`
+3. Run `npm start`
 
-### `yarn start`
+## Link:
+http://invoice-processing-trucks.s3-website.us-east-2.amazonaws.com/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# serverless_invoice_react_app
