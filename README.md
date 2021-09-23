@@ -4,7 +4,6 @@ Reference: https://github.com/CodeEngineTechnology/Serverless_Invoice_App
 
 Followed tutorial to host a web app on aws. 
 
-<img src="https://github.com/sarbjot-14/dynamic_dcf/blob/master/Screenshot_20210825-114536.jpg" width="200" height="380">
 ## AWS Architecture
 * **S3**  : Host the React App 
 * **API Gateway** : Route API calls from React App in S3 bucket to Lambda functions
