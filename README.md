@@ -10,6 +10,9 @@ Followed tutorial to host a web app on aws.
 
 * **S3**  : Host the React App 
 * **API Gateway** : Route API calls from React App in S3 bucket to Lambda functions
+
+<img src="https://github.com/sarbjot-14/serverless_invoice_react_app/blob/main/gateway.png" width="400" height="280">
+
 * **Lambda Functions** : Retrieve data from DynamoDB and send back to client application
 * **DynamoDB** : Database
 * **IAM** : Give permissions to services
